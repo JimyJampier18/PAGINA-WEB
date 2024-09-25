@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Menu Responsive</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mi Sitio</div>
+            <ul class="nav-links">
+                <li><a href="#" id="home-btn">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="login-form" class="hidden">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a TechWorld</h1>
+            <p>Las últimas noticias y artículos sobre tecnología.</p>
+            <button class="cta-button">Explorar Artículos</button>
+        </section>
+
+        <section class="articles">
+            <h2>Artículos Destacados</h2>
+            <div class="article-grid">
+                <div class="article">
+                    <h3>Los Mejores Smartphones de 2024</h3>
+                    <p>Descubre qué smartphones están liderando el mercado este año.</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="article">
+                    <h3>Innovaciones en IA</h3>
+                    <p>Cómo la inteligencia artificial está transformando nuestra vida diaria.</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="article">
+                    <h3>Guía de Gadgets para el Hogar</h3>
+                    <p>Los dispositivos que no pueden faltar en tu hogar inteligente.</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="article">
+                    <h3>Trends en Ciberseguridad</h3>
+                    <p>Las amenazas cibernéticas más relevantes del 2024.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments">
+            <h2>Comentarios</h2>
+            <form>
+                <label for="comment">Deja tu comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
